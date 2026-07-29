@@ -1,0 +1,10 @@
+openai
+groq
+gradio
+python-dotenv
+transformers
+scraper
+bs4
+sumy
+requests
+beautifulsoup4
