@@ -1,3 +1,4 @@
+numpy
 openai
 groq
 gradio
@@ -12,4 +13,11 @@ requests
 beautifulsoup4
 langchain
 langchain-openai
-langchain_core
+langchain-core
+langchain-groq
+langchain-chroma
+langchain-huggingface
+langchain-community
+langchain-google-genai
+pypdf
+sentence-transformers
