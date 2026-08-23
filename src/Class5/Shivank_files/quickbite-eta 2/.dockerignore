@@ -1,12 +1,9 @@
-.gradio
 __pycache__/
-*.egg-info
-*.egg-info/
-
-.env
 *.pyc
+venv/
+.venv/
+.git/
+.env
 *.ipynb
 eta_model.pkl
 data/raw/
-
-.venv/
