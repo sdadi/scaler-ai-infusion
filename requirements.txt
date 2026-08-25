@@ -21,3 +21,6 @@ langchain-community
 langchain-google-genai
 pypdf
 sentence-transformers
+
+strands
+config
