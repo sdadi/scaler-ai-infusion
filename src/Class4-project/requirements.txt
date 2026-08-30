@@ -6,5 +6,5 @@ beautifulsoup4       # clean up the HTML we fetched
 gradio               # turn your function into a chat app + public link
 
 # Optional — only if you rebuild pieces the LangChain way (Class 2):
-# langchain
-# langchain-openai
+langchain
+langchain-openai
