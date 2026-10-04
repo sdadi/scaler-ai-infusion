@@ -11,7 +11,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="llama-3.3-70b-versatile",        # a free Llama model on Groq
+    model=os.getenv("GROQ_LLM_MODEL"),
     messages=[
         {"role": "system", "content": "You are a witty travel guide."},
         {"role": "user",   "content": "Suggest one thing to do in Bangalore."},

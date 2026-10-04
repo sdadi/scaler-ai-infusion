@@ -6,7 +6,6 @@ python-dotenv
 --extra-index-url https://pytorch.org
 torch
 transformers
-scraper
 bs4
 sumy
 requests
@@ -22,5 +21,6 @@ langchain-google-genai
 pypdf
 sentence-transformers
 
-strands
-config
+strands-agents
+strands-agents-tools
+boto3

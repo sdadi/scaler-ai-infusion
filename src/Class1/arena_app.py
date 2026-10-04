@@ -20,8 +20,8 @@ def ask(client, model, prompt):
     return r.choices[0].message.content
 
 def battle(prompt):
-    a = ask(openai_client, "openai/gpt-oss-20b", prompt)
-    b = ask(groq_client, "llama-3.3-70b-versatile", prompt)
+    a = ask(openai_client, os.getenv("OPENAI_LLM_MODEL"), prompt)
+    b = ask(groq_client, os.getenv("GROQ_LLM_MODEL"), prompt)
     return a, b
 
 def vote(label):

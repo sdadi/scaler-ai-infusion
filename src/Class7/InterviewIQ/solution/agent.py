@@ -21,10 +21,10 @@ load_dotenv(find_dotenv(), override=True)
 PROVIDER = "groq"   # "groq" (free) or "openai"
 
 if PROVIDER == "groq":
-    MODEL = "openai/gpt-oss-20b"
-    client = OpenAI(api_key=os.getenv("GROQ_API_KEY"), base_url="https://api.groq.com/openai/v1")
+    MODEL = os.getenv("GROQ_MODEL", "openai/gpt-oss-20b")
+    client = OpenAI(api_key=os.getenv("GROQ_API_KEY"), base_url=os.getenv("GROQ_BASE_URL"))
 else:
-    MODEL = "gpt-4o-mini"
+    MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
     client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # ---- Session memory: a running scorecard for this interview ---------------

@@ -8,7 +8,7 @@ client = OpenAI()
 
 load_dotenv()
 response = client.chat.completions.create(
-    model="gpt-4o-mini",
+    model=os.getenv("OPENAI_LLM_MODEL"),
     messages=[
         {"role": "system", "content": "You are a witty travel guide."},
         {"role": "user", "content": "Suggest one thing to do in Bangalore."}

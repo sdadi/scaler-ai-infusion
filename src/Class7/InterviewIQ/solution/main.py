@@ -24,4 +24,5 @@ def main():
 
 
 if __name__ == "__main__":
+    print("=== InterviewIQ -- Mock Interview Coach -- beginning===\n")
     main()
